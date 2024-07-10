@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Embeddinator-4000</RootNamespace>
     <AssemblyName>Embeddinator-4000</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+   <TargetFramework>netstandard8.0</TargetFramework>
     <FileAlignment>512</FileAlignment>
     <BaseIntermediateOutputPath>..\obj\Debug\Embeddinator-4000</BaseIntermediateOutputPath>
   </PropertyGroup>

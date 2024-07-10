@@ -4,10 +4,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{C166803B-011F-4EAF-B8C2-D7DBBA3CF1EC}</ProjectGuid>
-    <OutputType>Exe</OutputType>
     <RootNamespace>objcgen</RootNamespace>
     <AssemblyName>objcgen</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+  
+    <RuntimeIdentifier>osx-x64</RuntimeIdentifier>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netstandard8.0</TargetFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
@@ -26,8 +28,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ExternalConsole>true</ExternalConsole>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="All" />
+  </ItemGroup>
+
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="Mono.Options">
